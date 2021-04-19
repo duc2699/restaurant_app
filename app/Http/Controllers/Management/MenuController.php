@@ -16,7 +16,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menus = Menu::all();
+        $menus = Menu::paginate(5);;
         return view('management.menu')
             ->with('menus', $menus);
     }
@@ -53,6 +53,7 @@ class MenuController extends Controller
             $request->validate([
                 'image' => 'nullable|file|image|mimes:jpeg,png,jpg|max:5000'
             ]);
+            
             $imageName = date('mdYHis') . uniqid() . '.' . $request->image->extension();
             $request->image->move(public_path('menu_images'), $imageName);
         }

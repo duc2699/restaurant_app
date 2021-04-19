@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         @include('management.inc.sidebar')
-        <div class="col-sm-8">
+        <div class="col-sm-8" style="font-size:18px">
             <i class="fas fa-users"></i> User
-            <a href="/management/user/create" class="btn btn-success btn-sm float-right"><i class="fas fa-plus"></i>
+            <a href="/management/user/create" class="btn btn-success btn-sm float-right" style="font-size:16px"><i class="fas fa-plus"></i>
                 Create User</a>
             <hr>
             @if(Session()->has('status'))
@@ -47,7 +47,7 @@
                     @endforeach
                 </tbody>
             </table>
-            
+            {{$users->links()}}
         </div>
     </div>
 </div>

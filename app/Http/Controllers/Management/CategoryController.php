@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Management;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Category;
+use App\Menu;
 
 class CategoryController extends Controller
 {
@@ -103,6 +104,7 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         Category::destroy($id);
+        Menu :: where('category_id',$id)->delete();
         Session()->flash('status', 'The category is deleted successfully!');
         return redirect('/management/category');
     }

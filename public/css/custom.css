@@ -2,7 +2,87 @@ a {
     color: #343a40;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: #343a40;
+}
+
+.login-box {
+    width: 520px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    margin: 100px auto;
+    border: 0.3px solid rgba(0, 0, 0, 0.125);
+    border-radius: 3%;
+    padding: 50px 30px;
+}
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.login-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: blod;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.btn-Login {
+    margin: 0 auto;
+    width: 75%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: red;
+}
+
+.btn-Login:hover {
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #000;
+}
+
+.dashboard {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.login-form{
+    margin-top: 200px;
+}
+
+.body-custom{
+    height:973px;
+    background-color: #bbcbff;
+}
+
+.form-dashboard{
+    width: 1000px;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: -150px;
 }

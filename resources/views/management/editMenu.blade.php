@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         @include('management.inc.sidebar')
-        <div class="col-sm-8">
-            <i class="fas fa-hamburger"></i>Edit a Menu
+        <div class="col-sm-8" style="font-size:18px">
+            <i class="fas fa-hamburger"></i> Edit a Menu
             <hr>
             @if($errors->any())
             <div class="alert alert-danger">
@@ -57,7 +57,7 @@
                         @endforeach
                     </select>
                 </div>
-                <button type="submit" class="btn btn-warning">Edit</button>
+                <button type="submit" class="btn btn-primary">Update</button>
             </form>
         </div>
     </div>

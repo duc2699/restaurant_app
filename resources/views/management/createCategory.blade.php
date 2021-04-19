@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="container">
+    <div class="row justify-content-center">
         @include('management.inc.sidebar')
-            <div class="col-sm-8">
+            <div class="col-sm-8" style="font-size:18px">
                 <i class="fas fa-align-justify"></i> Create a Category
                 <hr>
                 @if($errors->any())

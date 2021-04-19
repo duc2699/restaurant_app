@@ -52,7 +52,7 @@ class CashierController extends Controller
             $html .= '
             <div class="col-md-3 text-center">
                 <a class="btn btn-outline-secondary btn-menu" data-id="' . $menu->id . '">
-                    <img class="img-fluid" src="' . url('/menu_images/' .
+                    <img class="img-fluid" style="with: 110px; height:110px;" src="' . url('/menu_images/' .
                 $menu->image) . '">
                     <br>
                     ' . $menu->name . '

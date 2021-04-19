@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" class="btn btn-primary" value="Show Report">
+            <input type="submit" class="btn btn-primary" value="Show Report" style="margin-left: 1rem;">
         </form>
     </div>
 </div>

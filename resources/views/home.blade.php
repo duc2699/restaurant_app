@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+            <div class="card form-dashboard">
+                <div class="dashboard" style="font-size:16px">Dashboard</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -18,30 +18,30 @@
                         @if(Auth::user()->checkAdmin())
                         <div class="col-sm-4">
                             <a href="/management">
-                                <h4>Management</h4>
-                                <img width="50px" src="{{asset('images/management.svg')}}" alt="#">
+                                <h3>Management</h3>
+                                <img width="100px" src="{{asset('images/management.svg')}}" alt="#">
                             </a>
                         </div>
                         
                         <div class="col-sm-4">
                             <a href="/cashier">
-                                <h4>Cashier</h4>
-                                <img width="50px" src="{{asset('images/cashier.svg')}}" alt="#">
+                                <h3>Cashier</h3>
+                                <img width="100px" src="{{asset('images/cashier.svg')}}" alt="#">
                             </a>    
                         </div>
 
                         <div class="col-sm-4">
                             <a href="/report">
-                                <h4>Report</h4>
-                                <img width="50px" src="{{asset('images/report.svg')}}" alt="#">
+                                <h3>Report</h3>
+                                <img width="100px" src="{{asset('images/report.svg')}}" alt="#">
                             </a>
                         </div>
 
                         @else
                         <div class="col-12">
                             <a href="/cashier">
-                                <h4>Cashier</h4>
-                                <img width="50px" src="{{asset('images/cashier.svg')}}" alt="#">
+                                <h3>Cashier</h3>
+                                <img width="100px" src="{{asset('images/cashier.svg')}}" alt="#">
                             </a>    
                         </div>
                         @endif 

@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         @include('management.inc.sidebar')
-        <div class="col-sm-8">
-            <i class="fas fa-chair"></i> Create a Table
+        <div class="col-sm-8" style="font-size:18px">
+            <i class="fas fa-chair"></i> Edit a Table
             <hr>
             @if($errors->any())
             <div class="alert alert-danger">
@@ -24,7 +24,7 @@
                     <input type="text" name="name" value="{{$table->name}}" 
                     class="form-control" placeholder="Table...">
                 </div>
-                <button type="submit" class="btn btn-warning">Edit</button>
+                <button type="submit" class="btn btn-primary">Edit</button>
             </form>
         </div>
     </div>

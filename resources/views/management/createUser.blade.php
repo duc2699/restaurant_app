@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         @include('management.inc.sidebar')
-        <div class="col-sm-8">
+        <div class="col-sm-8" style="font-size:18px">
             <i class="fas fa-users"></i> Create a User
             <hr>
             @if($errors->any())
