@@ -40,7 +40,7 @@
                     </div>
                     <div class="custom-file">
                         <input type="file" name="image" class="custom-file" id="inputFroupFile01">
-                        <label class="custom-file-label" for="inputFroupFile01">Choose File</label>
+                        <label id="filename" class="custom-file-label" for="inputFroupFile01">Choose File</label>
                     </div>
                 </div>
 
@@ -62,4 +62,13 @@
         </div>
     </div>
 </div>
+<script>
+const actualBtn = document.getElementById('inputFroupFile01');
+
+const fileChosen = document.getElementById('filename');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+</script>
 @endsection

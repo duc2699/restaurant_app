@@ -108,7 +108,7 @@ class MenuController extends Controller
     {
         //information validation
         $request->validate([
-            'name' => 'required|unique:menus|max:255',
+            'name' => 'required|max:255',
             'price' => 'required|numeric',
             'category_id' => 'required|numeric',
         ]);
