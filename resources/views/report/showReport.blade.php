@@ -50,7 +50,7 @@
                             <tr class="bg-primary text-light">
                                 <td>{{$countSale++}}</td>
                                 <td>{{$sale->id}}</td>
-                                <td>{{date("m/d/Y H:i:s", strtotime($sale->update_at))}}</td>
+                                <td>{{date("m/d/Y H:i:s", strtotime($sale->updated_at))}}</td>
                                 <td>{{$sale->table_name}}</td>
                                 <td>{{$sale->user_name}}</td>
                                 <td>{{$sale->total_price}}</td>
